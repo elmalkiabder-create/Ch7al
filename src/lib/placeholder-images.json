@@ -1,0 +1,46 @@
+{
+  "placeholderImages": [
+    {
+      "id": "souk-hero",
+      "description": "A bustling Moroccan souk scene",
+      "imageUrl": "https://images.unsplash.com/photo-1748592522302-8ba1fbeaddbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb3JvY2NhbiUyMHNvdWt8ZW58MHx8fHwxNzYxNDQ2ODc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "moroccan souk"
+    },
+    {
+      "id": "product-1",
+      "description": "A can of soda",
+      "imageUrl": "https://images.unsplash.com/photo-1630404365865-97ff92feba6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzb2RhJTIwY2FufGVufDB8fHx8MTc2MTM5OTY3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "soda can"
+    },
+    {
+      "id": "product-2",
+      "description": "A bag of chips",
+      "imageUrl": "https://images.unsplash.com/photo-1633536705449-905533e73cab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxb3x8YmFnJTIwY2hpcHN8ZW58MHx8fHwxNzYxNDQ2ODc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bag chips"
+    },
+    {
+      "id": "product-3",
+      "description": "A bottle of water",
+      "imageUrl": "https://images.unsplash.com/photo-1664714628878-9d2aa898b9e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3YXRlciUyMGJvdHRsZXxlbnwwfHx8fDE3NjE0MjE4ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water bottle"
+    },
+    {
+      "id": "user-avatar-1",
+      "description": "User avatar",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjE0Mzg3NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-avatar-2",
+      "description": "User avatar",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MTM4NTI1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "user-avatar-3",
+      "description": "User avatar",
+      "imageUrl": "https://images.unsplash.com/photo-1607031542107-f6f46b5d54e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEzNjg0OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    }
+  ]
+}

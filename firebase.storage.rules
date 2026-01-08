@@ -1,0 +1,26 @@
+
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Règle 1: Lecture publique pour toutes les images
+    // N'importe qui (même non authentifié) peut voir les images des produits.
+    match /products/{allPaths=**} {
+      allow read: if true;
+    }
+
+    // Règle 2: Écriture restreinte au propriétaire
+    // Un utilisateur authentifié ne peut écrire que dans son propre "dossier".
+    // Le chemin du fichier doit commencer par "products/USER_ID/..."
+    match /products/{userId}/{allPaths=**} {
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Règle 3 (fallback) : Interdire toute autre lecture/écriture
+    // Sécurité additionnelle pour s'assurer que rien d'autre n'est accessible.
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+# Build cache files to ignore
+.next/
+out/
+dist/
+build/
+
+# Firebase build cache
+.firebase/
+
+# Node modules
+node_modules/
+
+# Environment files
+.env.local
+.env.*.local

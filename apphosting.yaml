@@ -1,0 +1,33 @@
+# Settings to manage and configure a Firebase App Hosting backend.
+# https://firebase.google.com/docs/app-hosting/configure
+
+runConfig:
+  # Increase this value if you'd like to automatically spin up
+  # more instances in response to increased traffic.
+  maxInstances: 1
+  # Set minimum instances to 0 for cold starts (cost-effective)
+  minInstances: 0
+  # Enable automatic scaling based on traffic
+  concurrency: 80
+  cpu: 1
+
+# Specifies the build and serving configuration for the backend.
+# The presence of this section indicates that the backend is a framework-based app.
+build:
+  # The command to run to build the app.
+  # This is relative to the monorepo root.
+  run: npm run build
+  
+  # Environment variables for build
+  env:
+    - NODE_ENV: production
+
+serve:
+  # The command to run to serve the app.
+  # This is relative to the monorepo root.
+  run: npm run start
+  
+  # Environment variables for serving
+  env:
+    - NODE_ENV: production
+    - PORT: 8080

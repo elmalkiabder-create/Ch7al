@@ -1,0 +1,23 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // Les images de profil :
+    // - Tout le monde peut les lire (elles sont publiques).
+    // - Seul l'utilisateur propriétaire peut les écrire/modifier/supprimer.
+    match /profile-pictures/{userId}/{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Les images de produits :
+    // - Tout le monde peut les lire.
+    // - Seuls les utilisateurs authentifiés peuvent en téléverser.
+    // La syntaxe {allPaths=**} autorise les fichiers dans les sous-dossiers.
+    match /product-images/{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+  }
+}
